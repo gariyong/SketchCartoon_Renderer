@@ -7,9 +7,14 @@
 ## 알고리즘 설명 및 구현
 
 1. **Grayscale Conversion** : 색상 정보를 제거하고 밝기 값만 남겨 선 추출의 기반을 만듦.
+![Grayscale Conversion](images/gray.png)
+
 2. **Inversion & Gaussian Blur** : 이미지를 반전시킨 후 Gaussian Blur를 적용하여 부드러운 배경 정보 생성.
+![Inversion & Gaussian Blur](images/inv_bl.png)
+
 3. **Division Operation** : 원본 Grayscale 이미지를 반전된 블러 이미지로 나눔. 이 과정에서 **밝기 변화가 급격한 부분(edge)**이 강조되어 연필로 그린 듯한 선을 생성
 4. **Scaling** : 'scale=256.0'을 적용하여 최종 스케치 영상의 밝기를 최적화함.
+![Division Oeration & Scaling](images/div.png)
 
 ---
 
